@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: darkgreen;
+}
+
+/*NAVBAR*/
+#navbar {
+  background-color: red; /*COLOR DE FONDO*/
+}
+#navbar2 {
+  background-color: chocolate; /*COLOR DE FONDO*/
+  color: black; /*COLOR TEXTO*/
+}
+.navbar-logo {
+  width: 50%;
+}
+.nav-link {
+  transition: 400ms;
+}
+.nav-link:hover {
+  font-size: large;
+  transform: scale(1.1);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*MAIN*/
+.main-container {
+  background-color: aqua; /*COLOR DE FONDO*/
+  color: azure; /*COLOR TEXTO*/
+}
+
+/*SECTION*/
+.section-container {
+  background-color: rgb(109, 90, 67); /*COLOR DE FONDO*/
+}
+.section-img {
+  width: 100px;
+}
+
+/*RECRUITING CARDS*/
+.recruiting-card {
+  background-color: blueviolet; /*COLOR DE FONDO*/
+  color: antiquewhite; /*COLOR TEXTO*/
+}
+
+/*FOOTER*/
+footer {
+  background-color: blue; /*COLOR DE FONDO*/
+}

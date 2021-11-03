@@ -11,86 +11,59 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/main.css">
 
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+   <!-- Vendor CSS Files -->
+   <link href="/vendor/aos/aos.css" rel="stylesheet">
+   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+   <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+   <link href="/vendor/remixicon/remixicon.css" rel="stylesheet">
+   <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+ 
+   <!-- Template Main CSS File -->
+   <link href="css/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid" id="navbar">
-      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="navbar-logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/login.html">Ingresar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/registro.html">Registro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/recluting.html">Cursos y reclutamiento</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--Nav secundaria-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid" id="navbar2">
-
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Buscar</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">Cursos y ofertas laborales
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Cursos</a></li>
-            <li><a class="dropdown-item" href="#">Reclutamiento</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-          </ul>
-        </li>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mis postulaciones</a>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-
-  <main>
-    <div class="p-4 main-container">
-      <div class="container">
-        <div class="row d-flex h-100 justify-content-center">
-          <div class="col-sm-6 text-center justify-content-center align-self-center">
-            <h1>TeamFire: Bolsa de empleo y capacitación.</h1>
-            <p>
-              Somos una comunidad que reune a instituciones, empresas y ONGs con
-              jóvenes que buscan tener sus primeras experiencias laborales o
-              colaborar a la comunidad.
-            </p>
-            <a href="registro.html" class="btn btn-primary">Comienza a formar parte de la comunidad aquí</a>
-          </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="index.html"><span></span></a></h1>
+          <a href="index.html"><img src="images/logo.png" alt=""class="img-fluid" width="150px"></a>
         </div>
-      </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="/index.html">Inicio</a></li>
+            <li><a class="nav-link scrollto" href="/registro.html">Registro</a></li>
+            <li><a class="nav-link scrollto " href="/recluting.html">Cursos y reclutamiento</a></li>
+            <li><a class="nav-link scrollto" href="/contacto.html">Contacto</a></li>
+            <li><a class="nav-link scrollto" href="/login.html">Ingresar</a></li>
+          </ul>
+          
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
     </div>
-  </main>
+  </header><!-- End Header -->
 
 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+      <h1>TeamFire: Bolsa de empleo y capacitación.</h1>
+      <h2>Somos una comunidad que reune a instituciones, empresas y ONGs con jóvenes que buscan tener sus primeras experiencias laborales o colaborar a la comunidad.</h2>
+      <a href="login.html" class="btn-get-started scrollto">Comienza a formar parte de la comunidad aquí</a>
+    </div>
+  </section><!-- End Hero -->
 
+ 
   <section>
     <div class="container-fluid text-center p-4 section-container">
       <h2>Quienes Somos</h2>

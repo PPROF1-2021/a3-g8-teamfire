@@ -6,50 +6,21 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  padding: 90px 20px 0;
 }
 
 a {
-  color: #009970;
+  color: #2f74ffef;
   text-decoration: none;
 }
 
 a:hover {
-  background-color:#6390E5; /*COLOR DE FONDO*/
+  background-color:#2f74ffef; /*COLOR DE FONDO*/
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-}
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #009970;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-.back-to-top:hover {
-  background: #00c28e;
-  color: #fff;
-}
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -68,16 +39,17 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   top: 20px;
+position: fixed;
   
 }
 #header .header-container {
-  background-color:rgba(47, 117, 255, 0.863)/*COLOR DE FONDO*/
+  background-color:#2f74ffef;/*COLOR DE FONDO*/
 }
 #header.header-scrolled {
   background: rgb(0, 0, 0);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   top: 0;
-  background-color: #263450;
+  background-color: #2f74ffef;
 }
 
 
@@ -90,18 +62,37 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   max-height: 100 px;
 }
-@media (max-width: 992px) {
-  #header {
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
- 
-  }
-  #header .logo {
-    padding-left: 0;
-  }
-  #header .logo h1 {
-    font-size: 40px;
-  }
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #2f74ffef;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
 }
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #2f74ffef;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+  
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -111,8 +102,8 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
-  background-color: #263450;;
- ;
+  background-color: #2f74ffef;
+  max-width: 992px;
 }
 .navbar ul {
   
@@ -121,11 +112,12 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   list-style: none;
   align-items: center;
- 
+  max-width: 992px;
  
 }
 .navbar li {
   position: relative;
+  max-width: 992px;
 }
 .navbar a, .navbar a:focus {
   display: flex;
@@ -140,11 +132,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   white-space: nowrap;
   transition: 0.3s;
+  max-width: 992px;
 }
 
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
 
+/**
 * Mobile Navigation 
-
+*/
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -197,10 +199,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #36343a;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #009970;
+  color:black;
 }
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
-  margin: 15px;
+
 }
 .navbar-mobile .dropdown ul {
   position: static;
@@ -223,11 +224,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #009970;
+  color: #2f74ffef;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -282,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 #hero .btn-get-started:hover {
-  background: #263450;
+  background: #2f74ffef;
   border: 2px solid #263450;
 }
 @media (min-width: 1024px) {
@@ -332,7 +334,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #009970;
+  background: #2f74ffef;
   bottom: 0;
   left: 0;
 }

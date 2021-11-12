@@ -1,9 +1,4 @@
-/**
-* Template Name: Bethany - v4.6.0
-* Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -154,91 +149,7 @@
   });
 
   /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
-  });
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      }
-    }
-  });
-
-  /**
-   * Animation on scroll
+   * Animacion on scroll
    */
   window.addEventListener('load', () => {
     AOS.init({
@@ -250,3 +161,136 @@
   });
 
 })()
+
+
+
+
+// funcion para calculo de edad
+function Edad() {
+  let fechaNacimiento = document.getElementById("FechaNacimiento").value;
+  let fechaNace = new Date(fechaNacimiento);
+  let fechaActual = new Date();
+
+  let mes = fechaActual.getMonth();
+  let dia = fechaActual.getDate();
+  let año = fechaActual.getFullYear();
+
+  fechaActual.setDate(dia);
+  fechaActual.setMonth(mes);
+  fechaActual.setFullYear(año);
+
+  edad = Math.floor(((fechaActual - fechaNace) / (1000 * 60 * 60 * 24) / 365));
+ 
+  document.getElementById('Edadcalculada').innerHTML = "tu edad es: " +edad+ "años"; 
+
+
+ 
+}
+
+
+
+
+//validaciones y memoria de usuario 
+
+function validacion(){
+const Nombre = document.getElementById("Nombre")
+const Apellido = document.getElementById("Apellido")
+const FechaNac = document.getElementById("FechaNacimiento")
+const Prov = document.getElementById("Provincia")
+const Pais = document.getElementById("Pais")
+const Email = document.getElementById("Email")
+const Contraseña = document.getElementById("Contraseña")
+const Form = document.getElementById("Formulario")
+
+Form.addEventListener("submit", e=>{
+
+if(Nombre.value.length <2){  e.preventDefault(); alert ("nombre muy corto")}
+if (Apellido.value.length <2) {e.preventDefault();alert("apellido muy corto")}
+if (edad <18) {e.preventDefault(); alert ("eres menor de edad")}
+if (Contraseña.value.length <6){e.preventDefault(); alert ("Contraseña Muy Corta ")}
+else {alert("regristro exitoso")}
+
+let nom=Nombre.value;
+let apell= Apellido.value;
+let fechaN= FechaNac.value;
+let prov=Prov.value;
+let pais=Pais.value;
+let email=Email.value;
+let contra=Contraseña.value;
+
+
+
+
+localStorage.setItem("userName", JSON.stringify(nom));
+localStorage.setItem("userApell", JSON.stringify(apell));
+localStorage.setItem("userFecha", JSON.stringify(fechaN));
+localStorage.setItem("userProv", JSON.stringify(prov));
+localStorage.setItem("userPais", JSON.stringify(pais));
+localStorage.setItem("userEmail", JSON.stringify(email));
+localStorage.setItem("userContra", JSON.stringify(contra));
+
+})
+}
+
+
+
+
+
+
+
+
+// funcion para ver datos de formulario en diplay.html y redireccionar a index.html
+function redireccion() {
+let UserName=JSON.parse(localStorage.getItem("userName"));
+let UserApell=JSON.parse(localStorage.getItem("userApell"));
+let UserFecha=JSON.parse(localStorage.getItem("userFecha"));
+let UserProv=JSON.parse(localStorage.getItem("userProv"));
+let UserPais=JSON.parse(localStorage.getItem("userPais"));
+let UserEmail=JSON.parse(localStorage.getItem("userEmail"));
+let UserContra=JSON.parse(localStorage.getItem("userContra"));
+
+
+
+const nameNodo=document.createElement("p");
+const newName=document.createTextNode(UserName);
+nameNodo.appendChild(newName);
+document.getElementById("datosDelUsuario").appendChild(nameNodo);
+
+const apellNodo=document.createElement("p");
+const newApell=document.createTextNode(UserApell);
+apellNodo.appendChild(newApell);
+document.getElementById("datosDelUsuario").appendChild(apellNodo);
+
+const fechaNodo=document.createElement("p");
+const newFecha=document.createTextNode(UserFecha);
+fechaNodo.appendChild(newFecha);
+document.getElementById("datosDelUsuario").appendChild(fechaNodo);
+
+const provNodo=document.createElement("p");
+const newProv=document.createTextNode(UserProv);
+provNodo.appendChild(newProv);
+document.getElementById("datosDelUsuario").appendChild(provNodo);
+
+const paisNodo=document.createElement("p");
+const newPais=document.createTextNode(UserPais);
+paisNodo.appendChild(newPais);
+document.getElementById("datosDelUsuario").appendChild(paisNodo);
+
+const emailNodo=document.createElement("p");
+const newEmail=document.createTextNode(UserEmail);
+emailNodo.appendChild(newEmail);
+document.getElementById("datosDelUsuario").appendChild(emailNodo);
+
+const contraNodo=document.createElement("p");
+const newContra=document.createTextNode(UserContra);
+contraNodo.appendChild(newContra);
+document.getElementById("datosDelUsuario").appendChild(contraNodo);
+
+//cronometro para redireccion a index
+let pagina = 'index.html';
+let segundos = 50;
+setTimeout(function (){
+document.location.href=pagina;
+
+},segundos*1000);
+}

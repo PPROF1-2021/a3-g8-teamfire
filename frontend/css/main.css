@@ -5,6 +5,7 @@ body {
   background-color: #E6E6E6;
 }
 
+
 /*NAVBAR*/
 #navbar {
   background-color:#2f74ffbe; /*COLOR DE FONDO*/
@@ -12,7 +13,7 @@ body {
 }
 #navbar2 {
   background-color: #dde7f0; /*COLOR DE FONDO*/
-  color: black; /*COLOR TEXTO*/
+  color: #fff; /*COLOR TEXTO*/
 }
 .navbar-logo {
   width: 50%;
@@ -28,9 +29,21 @@ body {
 }
 
 /*MAIN*/
+/*Modificación agrego padding to para separar la barra de busqueda en Recluting*/
+main {
+  padding-top: 15px;
+}
 .main-container {
   background-color:#EFEFEF; /*COLOR DE FONDO*/
-  color: rgb(58, 61, 61); /*COLOR TEXTO*/
+  color: rgb(61, 58, 59); /*COLOR TEXTO*/
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/*Modificacion de los div main-conteirner a div main-container2*/
+.main-container2{
+  background-color:#EFEFEF; /*COLOR DE FONDO*/
+  color: rgb(61, 58, 59); /*COLOR TEXTO*/
 }
 
 /*SECTION*/

@@ -33,17 +33,17 @@
     <div class="container-fluid">
       <div class="header-container d-flex align-items-center justify-content-between">
         <div class="logo">
-          <h1 class="text-light"><a href="index.html"><span></span></a></h1>
+         <!--Modificacion Se quita h1 del nav-->
           <a href="index.html"><img src="images/logo.png" alt=""class="img-fluid" width="150px"></a>
         </div>
 
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="/index.html">Inicio</a></li>
-            <li><a class="nav-link scrollto" href="/registro.html">Registro</a></li>
             <li><a class="nav-link scrollto " href="/recluting.html">Cursos y reclutamiento</a></li>
             <li><a class="nav-link scrollto" href="/contacto.html">Contacto</a></li>
             <li><a class="nav-link scrollto" href="/login.html">Ingresar</a></li>
+            <li><a class="nav-link scrollto" href="/registro.html">Registro</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -57,27 +57,27 @@
   <main>
     <div class="container w-50 p-4 my-5 main-container">
       <h1 class="m-4 text-center">Ingresar</h1>
-      <form class="needs-validation">
+      <form method="POST" action="login.php" class="needs-validation">
         <div class="mb-3 row">
-          <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email</label>
+          <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Usuario</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+            <input type="text" name="txtusuario" class="form-control" id="usuario1" placeholder="Usuario"
               required>
           </div>
         </div>
         <div class="mb-3 row">
           <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword" required>
+            <input type="password" name="txtpassword" class="form-control" id="inputPassword" required>
           </div>
           <div class="checkbox mb-3 text-center">
-    <label>
-      <input type="checkbox" value="remember-me">Recordarme
-    </label>
-        </div>        
+            <label>
+              <input type="checkbox" value="remember-me">Recordarme
+            </label>
+          </div>        
         <div class="g-recaptcha " data-sitekey="6LcNsJgcAAAAABboEiiMZ-IW7cNCbwSDvQwrGrql"></div>
         <div class="container text-center"> <div class="checkbox mb-3">
-          <button type="submit" class="btn btn-primary">Ingresar</button>
+          <button type="submit" value="Ingresar" class="btn btn-primary">Ingresar</button>
         </div>
       </form>
       <div class="text-center my-2">
@@ -107,8 +107,7 @@
   <script src="css/js/main.js"></script>
 
   <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 </body>
 

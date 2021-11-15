@@ -1,4 +1,5 @@
 
+
 --------------------------------
 /*--------------------------------------------------------------
 # General
@@ -39,12 +40,18 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   top: 20px;
-position: fixed;
-  
+  position: fixed; 
 }
+
 #header .header-container {
   background-color:#2f74ffef;/*COLOR DE FONDO*/
+  height: 80px;
+  padding: 5px 15px 5px 15px;
+  border: 2px solid red; /*MODIFICACIÓN BORDER*/
+  padding: 15px;
+  border-radius: 50px 20px;
 }
+
 #header.header-scrolled {
   background: rgb(0, 0, 0);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -52,11 +59,6 @@ position: fixed;
   background-color: #2f74ffef;
 }
 
-
-#header .logo h1 a, #header .logo h1 a:hover {
-  color: #fff;
-  text-decoration: none;
-}
 #header .logo img {
   padding: 0;
   margin: 0;
@@ -104,26 +106,29 @@ position: fixed;
   padding: 0;
   background-color: #2f74ffef;
   max-width: 992px;
+  align-items: center;
 }
-.navbar ul {
-  
+
+.navbar ul {  
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
   align-items: center;
-  max-width: 992px;
- 
+  max-width: 992px; 
 }
+
 .navbar li {
   position: relative;
   max-width: 992px;
+  align-items: center;
 }
+
 .navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 15px 10px 15px;
   color: #181818;
   transition: 0.3s;
   font-size: 15px;
@@ -132,7 +137,8 @@ position: fixed;
   font-family: "Poppins", sans-serif;
   white-space: nowrap;
   transition: 0.3s;
-  max-width: 992px;
+  max-width: 992px; 
+  
 }
 
 @media (max-width: 1366px) {
@@ -163,6 +169,10 @@ position: fixed;
 
   .navbar ul {
     display: none;
+  }
+  .main-container{    /*MODIFICACION REGISTRO*/
+    margin: 20%;
+    min-width: 60%;
   }
 }
 .navbar-mobile {
@@ -202,7 +212,6 @@ position: fixed;
   color:black;
 }
 
-}
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
@@ -302,6 +311,10 @@ position: fixed;
   #hero h1 {
     font-size: 32px;
     line-height: 36px;
+  }
+  .main-container{     /*MODIFICACION REGISTRO*/
+    margin: 4%;
+    min-width: 92%;
   }
 }
 

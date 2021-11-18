@@ -15,3 +15,6 @@ Saravia Vanesa Marisol,
 Trinidad Nelson
 
 [![Alt text](https://img.genial.lym/vi/configuroweb/0.jpg)](https://view.genial.ly/619314926c53b90d8b3b7447/presentation-teamfire)
+
+
+Al finalizar esta primera etapa realizamos un release (Release: Version1), en la siguiente etapa continuaremos con el proyecto (Release: Versio2)

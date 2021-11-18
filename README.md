@@ -12,6 +12,6 @@ Cabral Araceli Noelia,
 Gallardo Oscar Gabriel, 
 Lucarelli Agustin, 
 Saravia Vanesa Marisol, 
-Trinidad Nelson (Abandono)
+Trinidad Nelson
 
 [![Alt text](https://img.genial.lym/vi/configuroweb/0.jpg)](https://view.genial.ly/619314926c53b90d8b3b7447/presentation-teamfire)

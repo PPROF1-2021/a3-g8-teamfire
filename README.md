@@ -18,4 +18,4 @@ Trinidad Nelson
 
 Estructura del proyecto
 - Al finalizar esta primera etapa realizamos un release (Release: Version1), en la siguiente etapa continuaremos con el proyecto (Release: Versio2)
-- El proyecto se debidio en 2 etapas para mejor organización: 1er Parte TeamFire y 2da Parte TeamFire. En cada una de ellas observarás la distribución de tareas.
+- El proyecto se devidio en 2 etapas para mejor organización: 1er Parte TeamFire y 2da Parte TeamFire. En cada una de ellas observarás la distribución de tareas.

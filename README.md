@@ -16,7 +16,7 @@ Trinidad Nelson
 
 Presentación en Filiminas:
 
-![About Teamfire](https://view.genial.ly/619314926c53b90d8b3b7447/presentation-teamfire)
+![Click para ver la presentacion](https://view.genial.ly/619314926c53b90d8b3b7447/presentation-teamfire)
 
 Video Demo:
 
